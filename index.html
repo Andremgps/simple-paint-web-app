@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- JS -->
+    <script src="https://kit.fontawesome.com/b467d492b7.js" crossorigin="anonymous"></script>
+    <script defer src="./js/main.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="toolbar">
+        <div class="tool-wrapper">
+          <label>Cor</label>
+          <input type="color" id="painting_color" />
+        </div>
+        <div class="tool-wrapper">
+          <label>Tamanho da Linha</label>
+          <input type="number" id="line_width" value="3" />
+        </div>
+        <div class="tool-wrapper">
+          <button id="pencil" class="btn btn-tool active" onclick="changeTool('pencil');">
+            <i class="fas fa-pencil-alt"></i>
+          </button>
+        </div>
+        <div class="tool-wrapper">
+          <button id="line" class="btn btn-tool" onclick="changeTool('line');">
+            <i class="fas fa-slash"></i>
+          </button>
+        </div>
+        <div class="tool-wrapper">
+          <button id="square" class="btn btn-tool" onclick="changeTool('square');">
+            <i class="far fa-square"></i>
+          </button>
+        </div>
+        <div class="tool-wrapper">
+          <button id="circle" class="btn btn-tool" onclick="changeTool('circle');">
+            <i class="far fa-circle"></i>
+          </button>
+        </div>
+        <div class="tool-wrapper">
+          <a id="download_canvas_image" class="btn">
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+        <div class="tool-wrapper">
+          <button type="button" id="clear_canvas" class="btn btn-danger">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+      </div>
+      <canvas id="draw_canvas"></canvas>
+    </div>
+  </body>
+</html>

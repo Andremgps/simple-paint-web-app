@@ -1,0 +1,62 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #f3f3f3;
+  font-family: sans-serif;
+}
+input {
+  height: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.toolbar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background: #171717;
+}
+.toolbar .tool-wrapper {
+  display: block;
+  float: left;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 15px;
+}
+.toolbar label {
+  display: block;
+  margin-bottom: 5px;
+}
+.btn {
+  background-color: rgb(52, 137, 207);
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn.btn-danger {
+  background-color: rgb(219, 55, 55);
+}
+
+.btn.active {
+  opacity: 0.7;
+}
